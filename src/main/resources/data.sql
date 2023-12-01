@@ -1,0 +1,1 @@
+INSERT INTO userDetails (username,password) VALUES ('areeba29','pwd3');
