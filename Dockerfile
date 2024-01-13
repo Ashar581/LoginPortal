@@ -4,6 +4,6 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build target/*.war login.war
-COPY --from=build /data/user.csv/user.csv
+COPY --from=build /user.csv /user.csv
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "login.war"]

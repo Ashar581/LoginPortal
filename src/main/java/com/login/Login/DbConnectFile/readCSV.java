@@ -15,7 +15,7 @@ public class readCSV {
 
         List<User> userList = new ArrayList<>();
 
-        CSVReader csvReader = new CSVReader(new FileReader("data/user.csv"));
+        CSVReader csvReader = new CSVReader(new FileReader("user.csv"));
         String [] nextRecord;
         int count=0;
         String username="";
